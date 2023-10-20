@@ -1,0 +1,13 @@
+Sztringek: karakterek sorozata, karakter lánc
+
+Nincsen sztring típus a C programozási nyelvben, ezért karakterek sorozataként tárolom el.
+
+Nem tudom egy egyszerű változóban eltárolni Őket, mert több érték van, a tömb elemei lesznek a karakterek.
+A sztring egyes karaktereit meg tudom címezni.
+
+A sztringek olyan speciális tömbök, hogy az utolsó elemük mindig egy null karakter: '\0'
+
+pl.:
+char szo[]={'a','l','m','a','\0'};
+
+%s - ezzel jelzem a printf és scanf függvényeknél, hogy karakterlánc típus 
