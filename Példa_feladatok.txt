@@ -1,0 +1,23 @@
+1. Mit ír ki a következő program:
+
+#include <stdio.h>
+
+void main()
+{
+    int szam, val;
+    
+	printf("Adjon meg egy számot\n");
+        
+	scanf("%d",&szam);
+	if(0>szam)
+	{	
+		szam*=-1;
+	}
+	printf(" %d",szam);	
+}
+
+2. Kérjen be a felhasználótól egy egész számot és irassa ki a szám 2-20-ig vett szorzatait.
+
+
+3. Írjon programot, mely bekér egy számot kiszámolja a szám összes osztóját és egy tömbben 
+eltárolja.

@@ -1,0 +1,27 @@
+1. Mit ír ki a következő program:
+
+#include <stdio.h>
+
+void main()
+{
+    int szam=6;
+    
+	if(0<szam && szam%2)
+	{	
+		printf("pp");		
+	}
+        else if(0<szam || szam%2) 
+		{
+			printf("p");
+		}
+		else
+		{
+			printf("egyik sem");
+		}	
+}
+
+2. Készítsen egyszerű "számológépet", mely bekér a felhasználótól két számot és egy műveleti jelet,
+ majd kiírja az eredményt. 
+
+
+3. Kérjen be a felhasználótól egy egész számot és írja ki a primtényezős felbontását egy tömbbe.
