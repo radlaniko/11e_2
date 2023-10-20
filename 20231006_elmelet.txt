@@ -1,0 +1,45 @@
+Tömbök: több azonos típusú érték tárolására.
+
+Definiálása:
+
+//statikus szó azt jelenti, hogy állandó.
+//Tehát nem változik a tömb lefoglalt mérete a futás során.
+//Ebbe tesszük bele az adatokat.
+//Mindig nagyobb méretet kell lefoglalnom, mint amennyi adatot töltök bele
+
+tipus tömb_neve[méret]; // Ez statikusan lefoglalt egydimenziós tömb pl.:1,2,3,4,56
+int ert[10][5];//Ez egy statikusan lefoglalt tömb, ami két dimenziós.ért[10][5] 
+10 sor,5 oszlop. 
+//oszlopok száma
+//pl.:  6,4,6,5,7
+	3,7,8,9,0
+	2,5,5,0,4
+	6,6,6,7,7
+	9,8,7,6,2
+
+Kezdeti értékeket adjunk meg a tömbnek, ebben az esetben nem szükséges meghatározni
+ a tömb méretét, mert a fordító automatikusan meghatározza a kezdeti értékek számából
+a méreteket (dimenziókat).
+
+float tt[]={3.14,2.72,9.81}
+
+sizeof() operátor, ami meghatározza a tömb méretét
+
+meret=sizeof(tömb változó neve); Ez teljes tömb mérete.
+Azt szeretném meghatározni, hogy hány eleme van, akkor
+
+darab=sizeof(tt)/sizeof(tt[0]); 
+példa: 4byte*3/4byte=3
+
+#define N 34  //Az előfeldolgozónak szól, ami nem csinál mást, mint mindenhol ahol 
+//megtalálja az N-t, oda 34-et helyettesít be.
+
+Bejárása ciklussal történik. 
+A tömb elemeire indexekkel hivatkozok.
+Az indexelés 0-tól indul. 
+
+ 
+
+
+
+
