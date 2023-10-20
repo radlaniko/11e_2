@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void main()
+{
+    int szam,tipp,lepes=0;
+    srand(time(0));    
+    szam=rand()%101;
+
+    printf("Gondoltam egy számot 0 és 100 között!\n Az Ön tippje:");
+        
+	do{
+			scanf("%d",&tipp);
+			if(tipp<szam)
+			{	printf("Nagyobbra gondoltam. Újabb tipp:");
+			    lepes+=1;
+			}
+			else if(tipp>szam)
+			{	printf("kisebbre gondoltam.Újabb tipp:");
+				lepes+=1;
+			}
+			else
+				printf("Eltalálta, %d lépésből",lepes);
+	}while(szam!=tipp);
+	
+}

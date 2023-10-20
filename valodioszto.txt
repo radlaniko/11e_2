@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+#define N 100
+
+void main()
+{
+    int szam, osztok[N], ind=2,t=0;
+    
+    printf("Kérek egy egész számot, mely kisebb mint 1000\n");
+    scanf("%d",&szam);
+    
+    while(ind<szam && ind<1000)
+    {
+        if(!(szam%ind) )
+        {
+            osztok[t++]=ind;
+        }
+        ind++;
+    }
+    
+    if(t>0)
+    {
+        printf("A %d szám osztói:",szam);
+        for(int i=0;i<t;i++)
+        {
+            printf(" %d",osztok[i]);
+        }
+    }
+    else
+        printf("A %d szám primszám",szam);
+
+}
