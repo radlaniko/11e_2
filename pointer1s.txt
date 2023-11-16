@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 10
+
+void main()
+{
+    char *p;
+    char t[]="Almafa";
+    
+    p=t;
+    
+    for(int i=0;i<N;i++)
+    {
+        printf(" %c",*(p+i));
+	//printf(" %c",p[i]);
+    }
+}
