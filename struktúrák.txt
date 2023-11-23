@@ -1,0 +1,80 @@
+Struktúrák összetett adatszerkezet
+
+A felhasználó határozza meg a szerkezetüket
+Vegyesen tartalmazhatnak integert, float-ot, sztringet.
+Egy egységben kezelem a különböző típusú adatokat.
+
+Deklarációja:
+
+struct név{
+	típus tag1;
+	típus tag2;
+};
+
+Példa:
+
+struct datum{
+	int ev, ho, nap;
+	char hetnapja[10];
+};
+
+Struktúra változó létrehozása:
+- struktúra definiálása után:  
+
+struct datum{
+	int ev, ho, nap;
+	char hetnapja[10];
+}idopont1;
+
+- struktúra neve változó neve:
+struct datum idopont2;
+
+
+Struktúra tagokra hivatkozás:
+struktúra_változó.tag
+
+Például: 
+idopont1.ev
+idopont1.ho
+idopont2.hetnapja[0]
+
+Struktúrák egymásba ágyazása:
+
+struct név{
+	típus tag1;
+	típus tag2;
+	struct {
+			típus tag3;
+			típus tag4;
+			típus tag5;
+		}név;
+}stuctúra_változó;
+
+structútra_változó.név.tag3;
+
+struktúra_változó.tag2;
+
+Például:
+struct adatok{
+		char veznev[15];
+		char kernev[15];
+		struct{
+			int ev, ho, nap;
+		}szuldatum; 	
+};
+
+struct adatok szemadat;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
